@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Library - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Library.res" /d "_DEBUG" "C:\Users\123\Desktop\Windows 编程--课程实验\Windows编程大作业\Library\Library.rc"" 
+Creating temporary file "C:\Users\123\AppData\Local\Temp\RSP61E6.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Library.pdb" /debug /machine:I386 /out:"Debug/Library.exe" /pdbtype:sept 
+".\Debug\BookDataSet.obj"
+".\Debug\BookMDlg.obj"
+".\Debug\BorrowDataSet.obj"
+".\Debug\BorrowHistorySet.obj"
+".\Debug\BorrowSet.obj"
+".\Debug\Choose.obj"
+".\Debug\ClerkDataSet.obj"
+".\Debug\ClerkMDlg.obj"
+".\Debug\Explanation.obj"
+".\Debug\FineDataSet.obj"
+".\Debug\FineDlg.obj"
+".\Debug\FineHistoryDataSet.obj"
+".\Debug\LendOutDlg.obj"
+".\Debug\Library.obj"
+".\Debug\LibraryDoc.obj"
+".\Debug\LibrarySet.obj"
+".\Debug\LibraryView.obj"
+".\Debug\LoginDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\ReaderDataSet.obj"
+".\Debug\ReaderMDlg.obj"
+".\Debug\Registered.obj"
+".\Debug\ReturnBookDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Library.res"
+]
+Creating command line "link.exe @C:\Users\123\AppData\Local\Temp\RSP61E6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Library.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

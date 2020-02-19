@@ -1,0 +1,772 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Library.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#include ""l.chs\\afxdb.rc""           // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Library.ico"
+IDR_LIBRARTYPE          ICON    DISCARDABLE     "res\\LibraryDoc.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\Library_128px_1176959_easyicon.net.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\Open-Bookmark.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "系统(&S)"
+    BEGIN
+        MENUITEM "登录(&I)",                    ID_LOGIN_IN
+        MENUITEM "注册(&Z)",                    ID_REGISITERED
+        MENUITEM "退出(&O)",                    ID_LOGIN_OUT
+    END
+    POPUP "基本资料维护(&B)"
+    BEGIN
+        MENUITEM "用户资料维护(&U)",            ID_USER_MAINTAIN
+        MENUITEM "图书资料维护[&B]",            ID_BOOK_MAINTAIN
+        MENUITEM "读者资料维护[&R]",            ID_READER_MAINTAIN
+    END
+    POPUP "日常工作[&D]"
+    BEGIN
+        MENUITEM "借书[&L]",                    ID_LEND_OUT
+        MENUITEM "还书[&R]",                    ID_RETURN_BACK
+        MENUITEM "缴纳罚金[&F]",                ID_FINE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "说明(&E)",                    ID_EXPLANATION
+        MENUITEM "关于(&A)...",                 ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_FINE,                VIRTKEY, ALT, NOINVERT
+    "I",            ID_LOGIN_IN,            VIRTKEY, ALT, NOINVERT
+    "L",            ID_LEND_OUT,            VIRTKEY, ALT, NOINVERT
+    "M",            ID_BOOK_MAINTAIN,       VIRTKEY, ALT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_LOGIN_OUT,           VIRTKEY, ALT, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_READER_MAINTAIN,     VIRTKEY, ALT, NOINVERT
+    "R",            ID_RETURN_BACK,         VIRTKEY, ALT, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_USER_MAINTAIN,       VIRTKEY, ALT, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 252, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Library"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,38,54,20,20
+    CTEXT           "From:\n\nbjquentin\tjqkun@outlook.com",IDC_STATIC,59,46,
+                    154,37
+END
+
+IDD_LIBRARY_FORM DIALOG DISCARDABLE  0, 0, 536, 346
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "图书列表",IDC_LIST1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,183,25,48,10
+    CONTROL         "待还图书",IDC_LIST2,"Button",BS_AUTORADIOBUTTON,247,25,
+                    48,10
+    CONTROL         "历史借书",IDC_LIST3,"Button",BS_AUTORADIOBUTTON,304,25,
+                    48,10
+    LTEXT           "读者ID：",IDC_INFO,169,51,33,8
+    EDITTEXT        IDC_INFO_ID,205,45,105,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_ENQUERY,315,45,50,14
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,36,65,464,256
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 210, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统登录"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_COMBO1,86,35,70,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOGIN_ID,86,52,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOGIN_PASSWORD,86,69,70,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDC_CONFIRM,35,91,50,14
+    PUSHBUTTON      "取消",IDC_CANCEL,128,91,50,14
+    LTEXT           "用户ID：",IDC_STATIC,46,56,32,8
+    LTEXT           "密    码：",IDC_STATIC,46,73,33,8
+    LTEXT           "账户类型：",IDC_STATIC,40,39,41,8
+    LTEXT           "图书借阅管理系统",IDC_STATIC,84,15,65,8
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,58,13,20,20
+END
+
+IDD_CLERK DIALOG DISCARDABLE  0, 0, 294, 184
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户资料维护"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_USERNAME_Q,71,15,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USERID_Q,195,15,63,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "增加",IDC_NEW,34,140,50,14
+    PUSHBUTTON      "修改",IDC_EDIT,94,140,50,14
+    PUSHBUTTON      "查询",IDC_ENQUERY,35,160,50,14
+    PUSHBUTTON      "删除",IDC_DELETE,95,160,50,14
+    EDITTEXT        IDC_USERNAME,71,50,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USERID,195,50,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IDCARD,70,70,63,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_POSITION,195,72,63,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PASSWORD,70,90,63,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "上一条",IDC_PRIOR,55,110,30,14
+    PUSHBUTTON      "下一条",IDC_NEXT,209,110,30,14
+    PUSHBUTTON      "保存",IDC_SAVE,154,140,50,14
+    PUSHBUTTON      "取消",IDC_CANCEL_REC,209,140,50,14
+    PUSHBUTTON      "退出",IDC_EXIT,154,160,106,14
+    LTEXT           "用户姓名：",IDC_STATIC,30,18,38,8
+    LTEXT           "用户ID：",IDC_STATIC,163,18,31,8
+    GROUPBOX        "用户信息",IDC_STATIC,10,40,275,90
+    LTEXT           "用户姓名：",IDC_STATIC,30,55,38,8
+    LTEXT           "用户ID：",IDC_STATIC,163,55,31,8
+    LTEXT           "身份证号:",IDC_STATIC,30,75,35,8
+    LTEXT           "职  务：",IDC_STATIC,163,75,31,8
+    LTEXT           "密   码：",IDC_STATIC,30,95,35,8
+END
+
+IDD_BOOK DIALOG DISCARDABLE  0, 0, 295, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "书籍资料维护"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_BOOKNAME_Q,69,10,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOKID_Q,194,10,63,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "增加",IDC_NEW,34,145,50,14
+    PUSHBUTTON      "修改",IDC_EDIT,94,145,50,14
+    PUSHBUTTON      "查询",IDC_ENQUERY,35,166,50,14
+    PUSHBUTTON      "删除",IDC_DELETE,95,166,50,14
+    EDITTEXT        IDC_BOOKNAME,69,41,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOKID,194,41,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AUTHOR,69,60,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRESSDATE,194,60,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRESS,69,80,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOOK_NUM,194,80,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURPLUS_NUM,69,100,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLAG_BORROW,194,100,63,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "上一条",IDC_PRIOR,50,120,30,14
+    PUSHBUTTON      "下一条",IDC_NEXT,210,120,30,14
+    PUSHBUTTON      "保存",IDC_SAVE,154,145,50,14
+    PUSHBUTTON      "取消",IDC_CANCEL_REC,209,145,50,14
+    PUSHBUTTON      "退出",IDC_EXIT,154,166,106,14
+    LTEXT           "图书名称：",IDC_STATIC,29,14,38,8
+    LTEXT           "图书 ID：",IDC_STATIC,160,14,35,8
+    GROUPBOX        "图书信息",IDC_STATIC,5,25,275,115
+    LTEXT           "图书名称：",IDC_STATIC,29,46,38,8
+    LTEXT           "图书 ID：",IDC_STATIC,155,45,35,8
+    LTEXT           "作    者：",IDC_STATIC,28,65,39,8
+    LTEXT           "出版时间：",IDC_STATIC,155,65,38,8
+    LTEXT           "出 版 社：",IDC_STATIC,28,86,39,8
+    LTEXT           "能否外借：",IDC_STATIC,154,106,38,8
+    LTEXT           "图书数量：",IDC_STATIC,155,85,38,8
+    LTEXT           "还未借出：",IDC_STATIC,28,106,38,8
+END
+
+IDD_READER DIALOG DISCARDABLE  0, 0, 295, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "读者资料维护"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDC_EXIT,153,148,106,14
+    LTEXT           "读者姓名：",IDC_STATIC,40,12,38,8
+    EDITTEXT        IDC_READER_NAME_FOR_Q,79,9,63,14,ES_AUTOHSCROLL
+    LTEXT           "读者ID：",IDC_STATIC,170,12,31,8
+    EDITTEXT        IDC_READER_ID_FOR_Q,203,9,63,14,ES_AUTOHSCROLL
+    GROUPBOX        "读者信息",IDC_STATIC,15,30,264,95
+    LTEXT           "读者姓名：",IDC_STATIC,40,46,38,8
+    EDITTEXT        IDC_READER_NAME,79,41,63,14,ES_AUTOHSCROLL
+    LTEXT           "读者ID：",IDC_STATIC,170,46,31,8
+    EDITTEXT        IDC_READER_ID,203,41,63,14,ES_AUTOHSCROLL
+    LTEXT           "身份证号：",IDC_STATIC,40,70,38,8
+    EDITTEXT        IDC_IDCARD,79,64,63,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "上一条",IDC_PRIOR,60,105,30,14
+    PUSHBUTTON      "下一条",IDC_NEXT,205,105,30,14
+    PUSHBUTTON      "增加",IDC_NEW,34,130,50,14
+    PUSHBUTTON      "修改",IDC_EDIT,94,130,50,14
+    PUSHBUTTON      "保存",IDC_SAVE,154,130,50,14
+    PUSHBUTTON      "取消",IDC_CANCEL_REC,210,130,50,14
+    PUSHBUTTON      "查询",IDC_ENQUERY,33,148,50,14
+    PUSHBUTTON      "删除",IDC_DELETE,93,148,50,14
+    LTEXT           "职  业：",IDC_STATIC,170,94,31,8
+    COMBOBOX        IDC_COMBO1,203,90,63,40,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "已借数量：",IDC_STATIC,40,94,38,8
+    EDITTEXT        IDC_BORROW_NUM,79,88,63,14,ES_AUTOHSCROLL
+    LTEXT           "密  码：",IDC_STATIC,170,70,31,8
+    EDITTEXT        IDC_PASSWORD,203,64,63,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_LENDOUT DIALOG DISCARDABLE  0, 0, 310, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "借书"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDC_CONFIRM,250,49,50,14
+    PUSHBUTTON      "退出",IDC_CANCEL,250,89,50,14
+    LTEXT           "读者 ID：",IDC_STATIC,14,14,35,8
+    EDITTEXT        IDC_READER_ID,50,9,63,14,ES_AUTOHSCROLL
+    LTEXT           "图书 ID：",IDC_STATIC,141,14,35,8
+    EDITTEXT        IDC_BOOK_ID,175,9,63,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_ENQUERY,250,9,50,14
+    GROUPBOX        "图书信息",IDC_STATIC,5,29,240,96
+    LTEXT           "图书名称：",IDC_STATIC,11,44,38,8
+    EDITTEXT        IDC_BOOKNAME,50,39,63,14,ES_AUTOHSCROLL
+    LTEXT           "图书 ID：",IDC_STATIC,141,44,35,8
+    EDITTEXT        IDC_BOOKID,175,39,63,14,ES_AUTOHSCROLL
+    LTEXT           "作    者：",IDC_STATIC,10,63,39,8
+    EDITTEXT        IDC_AUTHOR,50,58,63,14,ES_AUTOHSCROLL
+    LTEXT           "出版时间：",IDC_STATIC,141,63,38,8
+    LTEXT           "出 版 社：",IDC_STATIC,10,84,39,8
+    EDITTEXT        IDC_PRESS,50,79,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRESSDATE,175,58,63,14,ES_AUTOHSCROLL
+    LTEXT           "能否外借：",IDC_STATIC,141,106,38,8
+    EDITTEXT        IDC_FLAG_BORROW,174,100,63,14,ES_AUTOHSCROLL
+    LTEXT           "还未借出：",IDC_STATIC,10,106,38,8
+    EDITTEXT        IDC_SURPLUS_NUM,50,100,63,14,ES_AUTOHSCROLL
+    LTEXT           "图书数量：",IDC_STATIC,141,85,38,8
+    EDITTEXT        IDC_BOOK_NUM,175,80,63,14,ES_AUTOHSCROLL
+END
+
+IDD_ReturnBook DIALOG DISCARDABLE  0, 0, 314, 104
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "还书"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,255,75,50,14
+    LTEXT           "图书 ID：",IDC_STATIC,145,8,35,8
+    EDITTEXT        IDC_EDITBook_ID,177,5,63,14,ES_AUTOHSCROLL
+    LTEXT           "读者 ID：",IDC_STATIC,10,8,35,8
+    EDITTEXT        IDC_EDITReader_ID,45,5,66,14,ES_AUTOHSCROLL
+    GROUPBOX        "借阅信息",IDC_STATIC,5,25,240,71
+    LTEXT           "读者姓名：",IDC_STATIC,10,39,38,8
+    EDITTEXT        IDC_READER_NAME,46,35,63,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "图书名称：",IDC_STATIC,137,39,38,8
+    EDITTEXT        IDC_BOOK_NAME,173,35,66,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "借书日期：",IDC_STATIC,10,60,38,8
+    EDITTEXT        IDC_EDITBorrowDate,46,55,63,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "还书截止日期：",IDC_STATIC,121,60,53,8
+    EDITTEXT        IDC_EDITReturnDate,173,55,66,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "超期天数：",IDC_STATIC,10,80,38,8
+    EDITTEXT        IDC_EDITDays,46,75,63,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "查询",IDC_ENQUERY,255,5,50,14
+    PUSHBUTTON      "确定",IDC_CONFIRM,255,40,50,14
+    LTEXT           "Static",IDC_NOW_TIME,121,80,110,8
+END
+
+IDD_FINE DIALOG DISCARDABLE  0, 0, 343, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "缴纳违约金"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_READER_ID,120,14,75,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_ENQUERY,214,14,50,14
+    DEFPUSHBUTTON   "确定",IDC_CONFIRM,89,59,50,14
+    PUSHBUTTON      "退出",IDC_EXIT,208,59,50,14
+    EDITTEXT        IDC_EDIT1,120,38,143,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,17,79,309,152
+    LTEXT           "读者 ID：",IDC_STATIC,84,19,35,8
+    LTEXT           "违约信息：",IDC_STATIC,78,39,38,8
+END
+
+IDD_CHOOSE DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提示"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "登录",ID_LOGIN,24,65,50,14
+    PUSHBUTTON      "注册",ID_REGISTERED,113,65,50,14
+    LTEXT           "未检测到用户ID，请登录或注册！",IDC_STATIC,36,33,113,8
+END
+
+IDD_REGISTERED DIALOG DISCARDABLE  0, 0, 178, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,24,152,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,152,50,14
+    LTEXT           "用户姓名：",IDC_STATIC,40,53,38,8
+    EDITTEXT        IDC_USERNAME,79,47,63,14,ES_AUTOHSCROLL
+    LTEXT           "身份证号：",IDC_STATIC,40,79,38,8
+    EDITTEXT        IDC_IDCARD,79,73,63,14,ES_AUTOHSCROLL
+    LTEXT           "密    码：",IDC_STATIC,39,105,39,8
+    EDITTEXT        IDC_PASSWORD,79,99,63,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "用户  ID：",IDC_STATIC,39,27,39,8
+    EDITTEXT        IDC_USERID,79,21,63,14,ES_AUTOHSCROLL
+    LTEXT           "职    务：",IDC_STATIC,39,129,39,8
+    COMBOBOX        IDC_POSITION,79,125,63,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EXPLANATION DIALOG DISCARDABLE  0, 0, 323, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "说明"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,309,217,ES_MULTILINE | ES_OEMCONVERT | 
+                    ES_READONLY | WS_VSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Library Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "图书借阅管理系统\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "图书借阅管理系统.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "图书借阅管理系统 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_LIBRARY_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 529
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 339
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_CLERK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_BOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_READER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_LENDOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_ReturnBook, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_FINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_CHOOSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_REGISTERED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_EXPLANATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_FAILED_OPEN_DATABASE "无法打开数据库。"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Library\n\nLibrar\n\n\nLibrary.Document\nLibrar Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Library"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_FIRST         "移到第一个记录\n第一个记录"
+    ID_RECORD_LAST          "移到最后一个的记录\n最后一个记录"
+    ID_RECORD_NEXT          "移到下一个记录\n下一记录"
+    ID_RECORD_PREV          "移到前一个记录\n前一记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Library.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#include "l.chs\afxdb.rc"           // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
